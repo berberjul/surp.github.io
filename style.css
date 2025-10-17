@@ -1,0 +1,123 @@
+/* Настройки шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: linear-gradient(to bottom, #fdfcfb, #ebedee);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: all .3s ease-out;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.content h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3.5em;
+    color: #FFADAD;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.baby-image {
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    transform: scale(1);
+    transition: transform .3s ease-in-out;
+}
+
+.baby-image:hover {
+    transform: scale(1.1);
+}
+
+.button {
+    background-color: #FFCDD2;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.button:hover {
+    background-color: #E91E63;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Полупрозрачная подложка */
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.close-button {
+    float: right;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFADAD;
+}
+
+/* Анимация плавного появления текста */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+ul li {
+    list-style-type: circle;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.modal-content img {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}

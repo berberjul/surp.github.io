@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Специальное Сообщение</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+    <!-- Музыкальный плеер -->
+    <div id="musicPlayer">
+        <audio controls autoplay loop>
+            <source src="assets/music/lullaby.mp3" type="audio/mp3">
+            Ваш браузер не поддерживает элемент audio.
+        </audio>
+    </div>
+
+    <!-- Основной контент страницы -->
+    <section class="content">
+        <h1 class="fade-in">У нас будет малыш! 🌼</h1>
+        <p class="fade-in">Представляете, какое волшебство случится?</p>
+        
+        <img src="assets/images/baby.jpg" alt="Baby Photo" class="baby-image fade-in"/>
+        <br><br>
+        <button class="button" onclick="showDetails()">Подробности здесь</button>
+    </section>
+
+    <!-- Модальное окно с подробностями -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="hideModal()">×</span>
+            <h2 class="fade-in">Наша новая история начинается!</h2>
+            <ul class="fade-in">
+                <li>Примерный срок родов: примерно через 9 месяцев.</li>
+                <li>Имя малышу мы выберем позже, главное, чтобы он был здоровым и счастливым!</li>
+                <li>Уже готовимся: обновляем детскую комнату и покупаем самые лучшие вещи для нового члена семьи.</li>
+            </ul>
+            
+            <img src="assets/images/couple.jpg" alt="Couple Photo" class="fade-in"/>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
